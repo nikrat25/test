@@ -1,0 +1,33 @@
+variables:
+  - name: app_service_plan_name
+    type: string
+    description: The name of the app service plan, less than 13 characters, no special characters
+
+  - name: os_type
+    type: string
+    description: The type of OS you want either Windows or Linux, defaults to Windows
+
+  - name: size
+    type: string
+    description: The size of the app service plan, defaults to S1
+
+  - name: worker_count
+    type: number
+    description: The number of workers for the app service plan, defaults to 1
+  
+  - name: location
+    type: string
+    description: The location of the app service plan, defaults to the main solution location
+
+  - name: integration_subnet_name
+    type: string
+    description: The name of the integration subnet, defaults to integration-subnet if not provided
+
+  - name: zone_balancing_enabled
+    type: bool
+    description: Whether to enable zone balancing, defaults to false
+
+  - name: app_service_plan_rg
+    type: string
+    description: The name of the resource group for the app service plan, defaults to the main solution resource group
+  

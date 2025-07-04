@@ -1,0 +1,8 @@
+varaiables:  
+  - name: integration_runtime_suffix
+    description: Integration runtime suffix name
+    type: string
+  
+  - name: integration_runtime_no
+    description: Integration runtime number. default to "001".
+    type: string

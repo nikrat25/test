@@ -1,0 +1,40 @@
+varaiables:  
+  - name: logic_app_version
+    description: version of function app, starts with `~`. Defaults to ~3"
+    type: string
+    default: ''
+  
+  - name: app_service_plan_name
+    description: Existing app service plan name
+    type: string
+    default: ''
+  
+  - name: app_service_plan_rg
+    description: Existing app service plan rg name
+    type: string
+    default: ''
+  
+  - name: integration_subnet_name
+    description: The ID of the subnet the app service will be associated to (the subnet must have a service_delegation configured for Microsoft.Web/serverFarms)
+    type: string
+    default: ''
+  
+  - name: app_service_private_endpoint_subnet_name
+    description: IThe ID of the subnet the app service will be associated to (the subnet must be configured for Microsoft.Web)
+    type: string
+    default: ''
+  
+  - name: storage_account_private_endpoint_subnet_name
+    description: The ID of the subnet the app service will be associated to (the subnet must have a service_delegation configured for Microsoft.Web/serverFarms)
+    type: string
+    default: ''
+  
+  - name: logic_app_name
+    description: Name of the logic app if different from the default
+    type: string
+    default: ''
+  
+  - name: enable_app_insights
+    description: Flag to enable application insights. Supported for Function apps only.
+    type: bool
+    default: false

@@ -1,0 +1,32 @@
+variables:
+  - name: project_name
+    type: string
+    description: The name of the Azure DevOps project
+    default: ''
+  
+  - name: project_group_name
+    type: string
+    description: The access level or group name for the new Azure DevOps Team
+    default: ''
+  
+  - name: team_name
+    type: string
+    description: The name for the new Azure DevOps team
+    default: ''
+  
+  - name: azuread_group_members
+    type: string
+    description: A list of Azure AD groups whose members will be added to the team. The key is the group name.
+    default: ''
+  
+  - name: azuread_group_admins
+    type: string
+    description: A list of Azure AD groups whose admins will be added to the team as admin. The key is the group name.
+    default: ''
+  
+  - name: repository_names
+    type: string
+    description: A list repositories to be created in the project.
+    default: ''
+  
+  

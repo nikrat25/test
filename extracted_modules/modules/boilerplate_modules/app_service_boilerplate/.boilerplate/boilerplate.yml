@@ -1,0 +1,103 @@
+variables:
+  - name: app_service_name
+    type: string
+    description: The name of the app service, less than 13 characters, no special characters
+    default: ''
+
+  - name: function_worker_runtime
+    type: string
+    description: The runtime you want function to use. One of- 'dotnet', 'dotnet-isolated', 'java', 'node', 'powershell', 'python', 'php', 'ruby', 'docker'
+    default: ''
+
+  - name: runtime_version
+    type: string
+    description: The runtime version you want function to use for function_worker_runtime.
+    default: ''
+  
+  - name: app_type
+    type: string
+    description: The type of app service you want either AppService or Function, defaults to AppService
+    default: ''
+  
+  - name: os_type
+    type: string
+    description: The type of OS you want either Windows or Linux, defaults to Windows
+    default: ''
+
+  - name: dotnet_isolated_enabled
+    description: Enable .NET Isolated Worker for the function app.
+    type: bool
+    default: false
+  
+  - name: java_server
+    description: The Java server type. Possible values include JAVA, TOMCAT, and JBOSSEAP.
+    type: string
+    default: ''
+  
+  - name: java_server_version
+    type: string
+    description: The Java server version.
+    default: ''
+
+  - name: docker_registry_url
+    type: string
+    description: The URL of the container registry where the docker_image_name is located. e.g. https://index.docker.io or https://mcr.microsoft.com. This value is required (for docker) with docker_image_name
+    default: ''
+  
+  - name: docker_image_name
+    description: The docker image, including tag, to be used. e.g. azure-app-service/windows/parkingpage:latest
+    type: string
+    default: ''
+
+  - name: app_service_plan_name
+    type: string
+    description: Existing service plan name
+    default: ''
+
+  - name: app_service_plan_resource_group
+    type: string
+    description: Existing service plan resource group
+    default: ''
+
+  - name: function_version
+    description: Version for function app
+    type: string
+    default: ''
+
+  - name: always_on
+    type: bool
+    description: Always On configuration
+    default: false
+  
+  - name: http2_enabled
+    type: bool
+    description: Optional. Enable HTTP2
+    default: true
+  
+  - name: integration_subnet_name
+    type: string
+    description: The ID of the subnet the app service will be associated to (the subnet must have a service_delegation configured for Microsoft.Web/serverFarms)
+    default: ''
+  
+  - name: app_service_private_endpoint_subnet_name
+    description: The ID of the subnet the app service will be associated to (the subnet must have a service_delegation configured for Microsoft.Web/serverFarms)
+    type: string
+    default: ''
+  
+  - name: storage_account_private_endpoint_subnet_name
+    type: string
+    description: The ID of the subnet the storage account will be associated to (the subnet must have a service_delegation configured for Microsoft.Web/serverFarms)
+    default: ''
+  
+  - name: enable_app_insights
+    type: bool
+    description: Flag to enable application insights. Supported for Function apps only.
+    default: false
+  
+  - name: container_registry_use_managed_identity
+    type: bool
+    description: Should connections for Azure Container Registry use Managed Identity.
+    default: true
+
+
+  

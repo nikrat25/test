@@ -1,0 +1,13 @@
+variables:
+  - name: group_id
+    type: string
+    description: ID of the existing AD group
+    default: ''
+  - name: path
+    type: string
+    description: ADLS path for the data asset
+    default: ''
+  - name: pod
+    type: string
+    description: Pod name for the data asset
+    default: ''

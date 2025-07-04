@@ -1,0 +1,30 @@
+variables:  
+  - name: sql_database_name
+    description: database name, no special character are allowed
+    type: string
+  - name: max_size_gb
+    description: max size of the database in GB, defaults to 64
+    type: number
+  - name: min_capacity
+    description: min capacity of the database in DTU
+    type: number
+  - name: auto_pause_delay_in_minutes
+    description: auto pause delay in minutes, defaults to 60
+    type: number
+  - name: sku
+    description: sku of the database, defaults to GP_S_Gen5_4
+    type: string
+  - name: key_vault_is_required
+    description: if true, the key vault is required, defaults to false
+    type: boolean
+  - name: storage_account_type
+    description: Specifies the storage account type used to store backups for this database. Possible values are Geo, Local and Zone.
+    type: string
+  - name: days_to_expire
+    description: days to expire, defaults to 365
+    type: number
+    
+    
+    
+    
+  
