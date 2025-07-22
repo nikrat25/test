@@ -84,7 +84,7 @@ inputs = {
 
   # Description: Name of the Devops Git Repos where the ADF code is created, if not provided then defaults to the solutionname
   # Type: string
-  # gitRepositoryName = ""
+  gitRepositoryName = ""
 
   # Description: Name of the git collaboration branch for datafactory
   # Type: string
