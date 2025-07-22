@@ -88,11 +88,11 @@ inputs = {
 
   # Description: Name of the git collaboration branch for datafactory
   # Type: string
-  # gitBranchName = "development"
+  gitBranchName = "{{.gitBranchName}}"
 
   # Description: The root folder within the repos where you want Data Factory to save the source files
   # Type: string
-  # gitADFRootFolder = "/data-factory"
+  gitADFRootFolder = "{{.gitADFRootFolder}}"
 
   # Description: Github URL for the configuration for Data Factory
   # Type: string
