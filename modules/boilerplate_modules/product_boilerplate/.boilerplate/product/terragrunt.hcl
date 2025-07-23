@@ -94,7 +94,8 @@ inputs = {
 
   # Description: Description of the group
   # Type: string
-  description = "{{.Description}}"
+  #description = "{{.Description}}"
+    description = "test"
 
   # Description: Custom product topology path for creating folder structure.
   # Type: string
