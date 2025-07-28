@@ -57,7 +57,7 @@ inputs = {
   # Description: The docker image, including tag, to be used. e.g. azure-app-service/windows/parkingpage:latest
   # Type: string
 
-  docker_image_name = "{{.java_server_version}}"
+  docker_image_name = "{{.docker_image_name}}"
 
 
   # Description: Existing service plan name
