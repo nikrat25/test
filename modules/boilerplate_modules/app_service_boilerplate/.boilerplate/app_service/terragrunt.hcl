@@ -16,11 +16,11 @@ inputs = {
 
   # Description: The runtime you want function to use. One of: 'dotnet', 'java', 'node', 'powershell', 'python', 'php', 'ruby', 'docker'
   # Type: string
-  function_worker_runtime = "DOCKER"
+  function_worker_runtime = "{{.function_worker_runtime}}"
 
   # Description: The runtime version you want function to use for function_worker_runtime.
   # Type: string
-  runtime_version = "sd"
+  runtime_version = "{{.runtime_version}}"
 
   # Description: Existing storage account name
   # Type: string
@@ -39,7 +39,7 @@ inputs = {
   # Description: The type of app service you want either AppService or Function, defaults to AppService
   # Type: string
 
-  app_type = "APPSERVICE"
+  app_type = "{{.app_type}}"
 
 
   # Description: Enable .NET Isolated Worker for the function app.
@@ -51,7 +51,7 @@ inputs = {
   # Description: The URL of the container registry where the docker_image_name is located. e.g. https://index.docker.io or https://mcr.microsoft.com. This value is required (for docker) with docker_image_name
   # Type: string
 
-  docker_registry_url = "https://msrdatapdapeusg2devcr.azurecr.io"
+  docker_registry_url = "{{.docker_registry_url}}"
 
 
   # Description: The docker image, including tag, to be used. e.g. azure-app-service/windows/parkingpage:latest
@@ -63,14 +63,14 @@ inputs = {
   # Description: Existing service plan name
   # Type: string
 
-  app_service_plan_name = "sd"
+  app_service_plan_name = "{{.app_service_plan_name}}"
   private_endpoint_subnet_id = "sd"
 
 
   # Description: Existing service plan resource group
   # Type: string
 
-  app_service_plan_resource_group = "sd"
+  app_service_plan_resource_group = "{{.app_service_plan_resource_group}}"
 
 
   # Description: Existing service plan name
@@ -83,38 +83,38 @@ inputs = {
   # Description: Always On configuration.
   # Type: bool
 
-  always_on = true
+  always_on = "{{.always_on}}"
 
 
   # Description: Optional. Enable HTTP2.
   # Type: bool
 
-  # http2_enabled = true
+  http2_enabled = "{{.http2_enabled}}"
 
 
   # Description: The ID of the subnet the app service will be associated to (the subnet must have a service_delegation configured for Microsoft.Web/serverFarms)
   # Type: string
 
-  integration_subnet_name = "appsnet-001"
+  integration_subnet_name = "{{.integration_subnet_name}}"
 
 
   # Description: The ID of the subnet the app service will be associated to (the subnet must have a service_delegation configured for Microsoft.Web/serverFarms)
   # Type: string
 
-  app_service_private_endpoint_subnet_name = "appsnet-002"
+  app_service_private_endpoint_subnet_name = "{{.app_service_private_endpoint_subnet_name}}"
 
 
   # Description: The ID of the subnet the app service will be associated to (the subnet must have a service_delegation configured for Microsoft.Web/serverFarms)
   # Type: string
 
-  storage_account_private_endpoint_subnet_name = "sapesnet-001"
+  storage_account_private_endpoint_subnet_name = "{{.storage_account_private_endpoint_subnet_name}}"
 
 
   # Description: Flag to enable application insights. Supported for Function apps only.
   # Type: bool
 
-  enable_app_insights = false
-  enable_private_endpoint = true
+  enable_app_insights = "{{.enable_app_insights}}"
+  enable_private_endpoint = "{{.enable_private_endpoint}}"
 
   # Description: the id of the log analytics to integrate with, use the log analytics module to get this result.
   # Type: string
@@ -125,11 +125,11 @@ inputs = {
   # Description: Should connections for Azure Container Registry use Managed Identity.
   # Type: bool
 
-  container_registry_use_managed_identity = true
+  container_registry_use_managed_identity = "{{.container_registry_use_managed_identity}}"
 
-  name                     = "my-app" 
-  location                 = "East US" 
-  resource_group_name      = "my-resource-group" 
-  app_service_plan_id      = "dummy"
+  app_service_name = "{{.app_service_name}}"
+  location                 = "{{.location}}"
+  resource_group_name      = "{{.resource_group_name}}" 
+  app_service_plan_id      = "{{.app_service_plan_id}}"
 
 }
