@@ -42,6 +42,7 @@ inputs = {
   # Description: (variable tags did not define a description)
   # Type: map
   tags = dependency.solutionsettings.outputs.tags # TODO: fill in value
+  location = "{{.location}}"
 
   # Description: 
   # Type: Map of required aad ad groups and role
