@@ -114,7 +114,7 @@ inputs = {
   # Type: bool
 
   enable_app_insights = "{{.enable_app_insights}}"
-  enable_private_endpoint = "{{.enable_private_endpoint}}"
+  # enable_private_endpoint = "{{.enable_private_endpoint}}"
 
   # Description: the id of the log analytics to integrate with, use the log analytics module to get this result.
   # Type: string
