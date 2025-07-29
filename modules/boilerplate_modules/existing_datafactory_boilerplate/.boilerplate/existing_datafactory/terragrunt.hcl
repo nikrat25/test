@@ -11,5 +11,5 @@ inputs = {
   # Required input variables
   # --------------------------------------------------------------------------------------------------------------------
 
- Datafactory Type = "{{.type}}"
+ contributer = "{{.contributer}}"
 }
