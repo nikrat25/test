@@ -4,61 +4,16 @@ terraform {
   source = "${include.envcommon.locals.base_source_url_github}//datafactory?ref=${include.envcommon.locals.datafactory_version}"
 }
 
-include "root" {
-  path   = find_in_parent_folders("root.hcl")
-  expose = true
-}
-
-include "envcommon" {
-  path   = "${dirname(find_in_parent_folders("root.hcl"))}/_envcommon/pdap.hcl"
-  expose = true
-}
-
-dependency "entra_lookup" {
-  config_path = "../entra_lookup"
-}
-
-dependency "lookup" {
-  config_path = "../../../lookup"
-}
-
-dependency "product" {
-  config_path = "../product"
-}
-
-dependency "solutionsettings" {
-  config_path = "../solutionsettings"
-}
-
-dependency "resource_group" {
-  config_path = "../resource_group"
-}
-
 
 inputs = {
   # --------------------------------------------------------------------------------------------------------------------
   # Required input variables
   # --------------------------------------------------------------------------------------------------------------------
 
-  # Description: (variable solution_settings did not define a description)
-  # Type: any
-  solution_settings = dependency.solutionsettings.outputs.settings
-
-  # Description: (variable tags did not define a description)
-  # Type: map
-  tags = dependency.solutionsettings.outputs.tags
 
   # Description: Name of SNet 1. This should be provided by the root main.tf, collected from the PLTMGT outputs.
   # Type: string
   private_subnet_name = "{{.private_subnet_name}}"
-
-  # Description: Key Vault id - mandatory
-  # Type: string
-  key_vault_id = dependency.product.outputs.key_vault_id
-
-  # Description: log analytics workspace id - mandatory
-  # Type: string
-  log_id = dependency.lookup.outputs.log_analytics_id
 
 
   # --------------------------------------------------------------------------------------------------------------------
