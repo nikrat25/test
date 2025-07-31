@@ -11,6 +11,33 @@ inputs = {
   # --------------------------------------------------------------------------------------------------------------------
 
   type = "{{.type}}"
+
+  git_should_apply_vsts_config = "{{.git_should_apply_vsts_config}}"
+
+  private_subnet_name  = "{{.private_subnet_name}}"
+
+  gitProjectName = "{{.gitProjectName}}"
+
+  gitAccountName = "{{.gitAccountName}}"
+
+  gitRepositoryName = "{{.gitRepositoryName}}"
+
+  gitBranchName = "{{.gitBranchName}}"
+
+  gitADFRootFolder = "{{.gitADFRootFolder}}"
+
+  gitRepositoryURL = "{{.gitRepositoryURL}}"
+
+  managed_virtual_network_enabled = "{{.managed_virtual_network_enabled}}"
+
+  public_network_enabled = "{{.public_network_enabled}}"
+
+  private_endpoint_name = "{{.private_endpoint_name}}"
+
+  private_service_connection_name = "{{.private_service_connection_name}}"
+
+  adf_managed_pe_integrations = "{{.adf_managed_pe_integrations}}"
+
   # Description: Name of SNet 1. This should be provided by the root main.tf, collected from the PLTMGT outputs.
   # Type: string
   private_subnet_name = "{{.private_subnet_name}}"
