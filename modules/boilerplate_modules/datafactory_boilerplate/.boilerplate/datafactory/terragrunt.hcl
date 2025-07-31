@@ -10,7 +10,7 @@ inputs = {
   # Required input variables
   # --------------------------------------------------------------------------------------------------------------------
 
-
+  type = "{{.type}}"
   # Description: Name of SNet 1. This should be provided by the root main.tf, collected from the PLTMGT outputs.
   # Type: string
   private_subnet_name = "{{.private_subnet_name}}"
