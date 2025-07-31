@@ -8,29 +8,57 @@ inputs = {
   # Required input variables
   # --------------------------------------------------------------------------------------------------------------------
 
-  # Description: (variable solution_settings did not define a description)
-  # Type: any
+  type = "{{.type}}"
 
-  # Description: (variable tags did not define a description)
-  # Type: map
+  app_service_name = "{{.app_service_name}}"
 
-  # Description: The runtime you want function to use. One of: 'dotnet', 'java', 'node', 'powershell', 'python', 'php', 'ruby', 'docker'
-  # Type: string
-  function_worker_runtime = "{{.function_worker_runtime}}"
+  location = "{{.location}}"
 
-  # Description: The runtime version you want function to use for function_worker_runtime.
-  # Type: string
+  resource_group_name = "{{.resource_group_name}}"
+
+  app_service_plan_id = "{{.app_service_plan_id}}"
+
+  cors = "{{.cors}}"
+
   runtime_version = "{{.runtime_version}}"
 
-  # Description: Existing storage account name
-  # Type: string
+  app_type = "{{.app_type}}"
 
-  # Description: Resource Group Name for the Storage Account
-  # Type: string
+  os_type = "{{.os_type}}"
 
-  # Description: Private DNS zone name
-  # Type: string
+  docker_registry_url = "{{.docker_registry_url}}"
 
+  docker_image_name = "{{.docker_image_name}}"
+
+  app_service_plan_name = "{{.app_service_plan_name}}"
+
+  app_service_plan_resource_group = "{{.app_service_plan_resource_group}}"
+
+  website_pull_image_over_vnet ="{{.website_pull_image_over_vnet}}"
+
+  WEBSITE_PULL_IMAGE_OVER_VNET = "{{.WEBSITE_PULL_IMAGE_OVER_VNET}}"
+
+  key_vault_name = "{{.key_vault_name}}"
+
+  asp_net_core_environment = "{{.asp_net_core_environment}}"
+
+  acr_use_manage_identity_credential = "{{.acr_use_manage_identity_credential}}"
+
+  server_name = "{{.server_name}}"
+
+  always_on = "{{.always_on}}"
+
+  http2_enabled = "{{.http2_enabled}}"
+
+  integration_subnet_name = '{{.integration_subnet_name}}"
+
+  app_service_private_endpoint_subnet_name = "{{.app_service_private_endpoint_subnet_name}}"
+
+  storage_account_private_endpoint_subnet_name = "{{.storage_account_private_endpoint_subnet_name}}"
+
+  enable_app_insights = "{{.enable_app_insights}}"
+
+  function_worker_runtime = "{{.function_worker_runtime}}"
 
   # --------------------------------------------------------------------------------------------------------------------
   # Optional input variables
