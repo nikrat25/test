@@ -50,7 +50,7 @@ inputs = {
 
   http2_enabled = "{{.http2_enabled}}"
 
-  integration_subnet_name = '{{.integration_subnet_name}}"
+  integration_subnet_name = "{{.integration_subnet_name}}"
 
   app_service_private_endpoint_subnet_name = "{{.app_service_private_endpoint_subnet_name}}"
 
