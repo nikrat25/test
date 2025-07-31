@@ -11,5 +11,15 @@ inputs = {
   # Required input variables
   # --------------------------------------------------------------------------------------------------------------------
 
- contributer = "{{.contributer}}"
+  contributer = "{{.contributer}}"
+
+  type = "{{.type}}"
+
+  existing_adf_name = "{{.existing_adf_name}}"
+
+  security_group_member_de = "{{.security_group_member_de}}"
+
+  datafactory_contributer = "{{.datafactory_contributer}}"
+
+  
 }
