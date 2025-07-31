@@ -5,6 +5,12 @@ terraform {
 
 inputs = {
  
-  app_type = "{{.app_type}}"
+  type = "{{.type}}"
+
+  contributer = "{{.contributer}}"
+
+  security_group_member_de = "{{.security_group_member_de}}"
+
+  
 
 }
