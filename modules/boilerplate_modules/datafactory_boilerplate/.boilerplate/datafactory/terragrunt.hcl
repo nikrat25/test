@@ -36,7 +36,7 @@ inputs = {
 
   private_service_connection_name = "{{.private_service_connection_name}}"
 
-  adf_managed_pe_integrations = "{{.adf_managed_pe_integrations}}"
+ # adf_managed_pe_integrations = "{{.adf_managed_pe_integrations}}"
 
   # Description: Name of SNet 1. This should be provided by the root main.tf, collected from the PLTMGT outputs.
   # Type: string
@@ -107,7 +107,7 @@ inputs = {
   # Description: (variable adf_managed_pe_integrations did not define a description)
   # Type: map
   {{if .adf_managed_pe_integrations}}
-  adf_managed_pe_integrations = {{.adf_managed_pe_integrations}}
+  # adf_managed_pe_integrations = {{.adf_managed_pe_integrations}}
   {{else}}
   # adf_managed_pe_integrations = {}
   {{end}}
