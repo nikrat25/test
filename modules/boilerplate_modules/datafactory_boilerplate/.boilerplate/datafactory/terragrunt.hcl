@@ -12,6 +12,8 @@ inputs = {
 
   type = "{{.type}}"
 
+  adf_name = "{{.adf_name}}"
+
   git_should_apply_vsts_config = "{{.git_should_apply_vsts_config}}"
 
   private_subnet_name  = "{{.private_subnet_name}}"
