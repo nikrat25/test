@@ -10,7 +10,7 @@ inputs = {
   # Required input variables
   # --------------------------------------------------------------------------------------------------------------------
 
-  key_vault_name = "{{"key_vault_name"}}"
+  key_vault_name = "{{.key_vault_name}}"
 
   type = "{{.type}}"
 
