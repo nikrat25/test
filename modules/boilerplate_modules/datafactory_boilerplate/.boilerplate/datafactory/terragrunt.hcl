@@ -38,6 +38,14 @@ inputs = {
 
   private_service_connection_name = "{{.private_service_connection_name}}"
 
+  tenant_id = "{{.tenant_id}}"
+
+  client_id = "{{.client_id}}"
+
+  client_secret = "{{.client_secret}}"
+
+  subscription_id = "{{.subscription_id}}"
+
  # adf_managed_pe_integrations = "{{.adf_managed_pe_integrations}}"
 
   # Description: Name of SNet 1. This should be provided by the root main.tf, collected from the PLTMGT outputs.
@@ -114,3 +122,4 @@ inputs = {
   # adf_managed_pe_integrations = {}
   {{end}}
 }
+
