@@ -1,3 +1,7 @@
+terraform {
+  backend "local" {}
+}
+
 data "azurerm_resource_group" "existing_rg" {
   name = "rg-mars-poc"
 }
