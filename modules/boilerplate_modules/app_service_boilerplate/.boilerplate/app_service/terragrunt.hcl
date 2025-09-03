@@ -1,6 +1,20 @@
+# terraform {
+#  source = "../../../config/resources/app_service"
+# }
+
 terraform {
-  source = "../../../config/resources/app_service"
+  source = "git@github.com:nikrat25/test.git//resources/app_service?ref=main"
+  
+  extra_arguments "init_args" {
+    commands = ["init"]
+    arguments = [
+      "-upgrade"
+    ]
+  }
 }
+
+# Configure a shorter download directory
+download_dir = "C:/tf-cache/${path_relative_to_include()}"
 
 
 inputs = {
@@ -161,3 +175,4 @@ inputs = {
   app_service_plan_id      = "{{.app_service_plan_id}}"
 
 }
+
