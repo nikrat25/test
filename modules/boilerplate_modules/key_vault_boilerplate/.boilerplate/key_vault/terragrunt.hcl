@@ -4,7 +4,7 @@
 #  source = "../../../config/resources/key_vault"
 # }
 terraform {
-  source = "git@github.com:nikrat25/test.git//key_vault?ref=main"
+  source = "git@github.com:nikrat25/test.git//resources/key_vault?ref=main"
   
   extra_arguments "init_args" {
     commands = ["init"]
