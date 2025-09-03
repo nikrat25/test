@@ -29,4 +29,11 @@ inputs = {
   akv_subnet = "{{.akv_subnet}}"
 
   key_vault_reader_role = "{{.key_vault_reader_role}}"
-}
+ 
+  tenant_id = "{{.tenant_id}}"
+
+  client_id = "{{.client_id}}"
+
+  client_secret = "{{.client_secret}}"
+
+  subscription_id = "{{.subscription_id}}"
