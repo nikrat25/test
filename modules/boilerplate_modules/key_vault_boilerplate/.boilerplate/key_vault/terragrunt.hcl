@@ -37,3 +37,4 @@ inputs = {
   client_secret = "{{.client_secret}}"
 
   subscription_id = "{{.subscription_id}}"
+}
