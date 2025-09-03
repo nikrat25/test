@@ -74,6 +74,14 @@ inputs = {
 
   function_worker_runtime = "{{.function_worker_runtime}}"
 
+  tenant_id = "{{.tenant_id}}"
+
+  client_id = "{{.client_id}}"
+
+  client_secret = "{{.client_secret}}"
+
+  subscription_id = "{{.subscription_id}}"
+
   # --------------------------------------------------------------------------------------------------------------------
   # Optional input variables
   # Uncomment the ones you wish to set
@@ -175,4 +183,5 @@ inputs = {
   app_service_plan_id      = "{{.app_service_plan_id}}"
 
 }
+
 
