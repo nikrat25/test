@@ -1,5 +1,5 @@
 terraform {
-  source = "../../../config/resources/app_service"
+  source = "../../../../config/resources/app_service"
 }
 
 # terraform {
@@ -183,6 +183,7 @@ inputs = {
   app_service_plan_id      = "{{.app_service_plan_id}}"
 
 }
+
 
 
 
