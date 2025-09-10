@@ -52,7 +52,7 @@ inputs = {
 
   WEBSITE_PULL_IMAGE_OVER_VNET = "{{.WEBSITE_PULL_IMAGE_OVER_VNET}}"
 
-  key_vault_name = "{{.key_vault_name}}"
+  app_service_key_vault_name = "{{.app_service_key_vault_name}}"
 
   asp_net_core_environment = "{{.asp_net_core_environment}}"
 
@@ -183,6 +183,7 @@ inputs = {
   app_service_plan_id      = "{{.app_service_plan_id}}"
 
 }
+
 
 
 
