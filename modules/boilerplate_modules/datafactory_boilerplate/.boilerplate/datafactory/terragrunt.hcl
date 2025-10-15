@@ -3,7 +3,7 @@
 terraform {
 #  source = "git::https://github.com/nikrat25/test//datafactory?ref=main&shallow=true"
 #  source = "../../../../config/resources/datafactory"
-   source = "git::ssh://git@ssh.dev.azure.com/v3/marsanalytics/PADLE%20Data%20and%20Analytics%20DNA//padlesupport/DEV/datafactory"
+   source = "."
 }
 
 # terraform {
@@ -139,6 +139,7 @@ inputs = {
   # adf_managed_pe_integrations = {}
   {{end}}
 }
+
 
 
 
