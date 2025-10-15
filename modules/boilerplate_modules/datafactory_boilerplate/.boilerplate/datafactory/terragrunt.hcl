@@ -29,6 +29,8 @@ inputs = {
 
   type = "{{.type}}"
 
+  ad_group_owner_email = "test@effem.com"
+
   adf_name = "{{.adf_name}}"
 
   git_should_apply_vsts_config = "{{.git_should_apply_vsts_config}}"
@@ -139,6 +141,7 @@ inputs = {
   # adf_managed_pe_integrations = {}
   {{end}}
 }
+
 
 
 
