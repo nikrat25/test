@@ -29,7 +29,7 @@ inputs = {
 
   type = "{{.type}}"
 
-  ad_group_owner_email = ["test@effem.com"]
+  #ad_group_owner_email = ["test@effem.com"]
 
   adf_name = "{{.adf_name}}"
 
@@ -141,6 +141,7 @@ inputs = {
   # adf_managed_pe_integrations = {}
   {{end}}
 }
+
 
 
 
