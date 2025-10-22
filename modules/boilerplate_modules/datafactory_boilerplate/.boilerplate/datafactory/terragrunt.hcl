@@ -31,6 +31,10 @@ inputs = {
 
   #ad_group_owner_email = ["test@effem.com"]
 
+
+
+  integration_runtime_name = "{{.integration_runtime_name}}"
+
   adf_name = "{{.adf_name}}"
 
   git_should_apply_vsts_config = "{{.git_should_apply_vsts_config}}"
@@ -141,6 +145,7 @@ inputs = {
   # adf_managed_pe_integrations = {}
   {{end}}
 }
+
 
 
 
