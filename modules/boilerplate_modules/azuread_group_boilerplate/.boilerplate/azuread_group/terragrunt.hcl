@@ -10,9 +10,7 @@ inputs = {
   # --------------------------------------------------------------------------------------------------------------------
 
   type = "{{.type}}"
-
-  azuread_group_name = "{{.azuread_group_name}}"
-
+  security_group_members_de = "{{.security_group_members_de}}"
 }
 
 
