@@ -1,5 +1,22 @@
 terraform {
-#  source = "git::https://github.com/nikrat25/test//datafactory?ref=main&shallow=true"
-#  source = "../../../../config/resources/datafactory"
    source = "."
 }
+
+
+inputs = {
+  # --------------------------------------------------------------------------------------------------------------------
+  # Required input variables
+  # --------------------------------------------------------------------------------------------------------------------
+  datafactory_id = {{.datafactory_id}}
+  data_engineer_aad_group_id = {{.data_engineer_aad_group_id}}
+
+}
+
+
+
+
+
+
+
+
+
