@@ -1,3 +1,0 @@
-locals {
-  product = "{{.Product}}"
-}
