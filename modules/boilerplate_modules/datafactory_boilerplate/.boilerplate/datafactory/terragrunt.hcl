@@ -15,8 +15,6 @@ inputs = {
 
   adf_name = "{{.adf_name}}"
 
-  gitProjectName = "{{.gitProjectName}}"
-
   gitAccountName = "{{.gitAccountName}}"
 
   gitRepositoryName = "{{.gitRepositoryName}}"
@@ -28,6 +26,7 @@ inputs = {
   private_subnet_name = "{{.private_subnet_name}}"
 
 }
+
 
 
 
