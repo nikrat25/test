@@ -15,17 +15,18 @@ inputs = {
 
   adf_name = "{{.adf_name}}"
 
-  gitAccountName = "{{.gitAccountName}}"
+  git_account_name = "{{.git_account_name}}"
 
-  gitRepositoryName = "{{.gitRepositoryName}}"
+  git_repository_name = "{{.git_repository_name}}"
 
-  gitBranchName = "{{.gitBranchName}}"
+  git_branch_name = "{{.git_branch_name}}"
 
-  gitRepositoryURL = "{{.gitRepositoryURL}}"
+  git_repository_url = "{{.git_repository_url}}"
 
   private_subnet_name = "{{.private_subnet_name}}"
 
 }
+
 
 
 
