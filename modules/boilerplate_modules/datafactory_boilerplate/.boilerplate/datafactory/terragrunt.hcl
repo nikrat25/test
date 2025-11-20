@@ -13,7 +13,7 @@ inputs = {
 
   integration_runtime_name = "{{.integration_runtime_name}}"
 
-  adf_name = "{{.adf_name}}"
+  usecase_name = "{{.usecase_name}}"
 
   git_account_name = "{{.git_account_name}}"
 
@@ -26,6 +26,7 @@ inputs = {
   private_subnet_name = "{{.private_subnet_name}}"
 
 }
+
 
 
 
